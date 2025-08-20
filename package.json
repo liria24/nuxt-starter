@@ -12,14 +12,34 @@
     "lint:fix": "eslint --fix ."
   },
   "dependencies": {
-    "@iconify-json/lucide": "^1.2.62",
+    "@iconify-json/lucide": "^1.2.63",
     "@iconify-json/simple-icons": "^1.2.48",
-    "@nuxt/ui": "^3.3.2",
-    "nuxt": "^4.0.3"
+    "@iconify-json/svg-spinners": "^1.2.4",
+    "@nuxt/ui": "^4.0.0-alpha.0",
+    "@nuxtjs/i18n": "^10.0.6",
+    "@nuxtjs/robots": "5.5.0",
+    "@nuxtjs/sitemap": "7.4.3",
+    "@vueuse/nuxt": "^13.7.0",
+    "@vercel/analytics": "^1.5.0",
+    "clsx": "^2.1.1",
+    "nuxt": "^4.0.3",
+    "nuxt-link-checker": "4.3.1",
+    "nuxt-og-image": "5.1.9",
+    "nuxt-schema-org": "5.0.6",
+    "nuxt-seo-utils": "7.0.14",
+    "zod": "^4.0.17"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.9.0",
+    "@types/node": "^24.3.0",
     "eslint": "^9.33.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-organize-imports": "^4.2.0",
+    "prettier-plugin-tailwindcss": "^0.6.14",
     "typescript": "^5.9.2"
-  }
+  },
+  "engines": {
+    "node": "22.x"
+  },
+  "packageManager": "bun@1.2.20"
 }
