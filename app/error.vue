@@ -6,30 +6,30 @@ import { Analytics } from '@vercel/analytics/nuxt'
 const { locale } = useI18n()
 
 const props = defineProps({
-  error: {
-    type: Object as PropType<NuxtError>,
-    default: () => ({
-      statusCode: 500,
-      statusMessage: 'Unknown Error',
-    }),
-  },
+    error: {
+        type: Object as PropType<NuxtError>,
+        default: () => ({
+            statusCode: 500,
+            statusMessage: 'Unknown Error',
+        }),
+    },
 })
 </script>
 
 <template>
-  <UApp :locale="locales[locale]">
-    <NuxtRouteAnnouncer />
-    <NuxtLoadingIndicator />
-    <NuxtLayout>
-      <Analytics />
-      <div class="mt-24 flex w-full flex-col items-center justify-center gap-4">
-        <h1 class="text-7xl font-extralight">
-          {{ props.error.statusCode }}
-        </h1>
-        <h2 class="text-muted text-lg">
-          {{ props.error.message }}
-        </h2>
-      </div>
-    </NuxtLayout>
-  </UApp>
+    <UApp :locale="locales[locale]">
+        <NuxtRouteAnnouncer />
+        <NuxtLoadingIndicator />
+        <NuxtLayout>
+            <Analytics />
+            <div class="mt-24 flex w-full flex-col items-center justify-center gap-4">
+                <h1 class="text-7xl font-extralight">
+                    {{ props.error.statusCode }}
+                </h1>
+                <h2 class="text-muted text-lg">
+                    {{ props.error.message }}
+                </h2>
+            </div>
+        </NuxtLayout>
+    </UApp>
 </template>

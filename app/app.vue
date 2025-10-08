@@ -6,12 +6,12 @@ const { locale } = useI18n()
 </script>
 
 <template>
-  <UApp :locale="locales[locale]">
-    <NuxtRouteAnnouncer />
-    <NuxtLoadingIndicator />
-    <NuxtLayout>
-      <Analytics />
-      <NuxtPage />
-    </NuxtLayout>
-  </UApp>
+    <UApp :locale="locales[locale]">
+        <NuxtRouteAnnouncer />
+        <NuxtLoadingIndicator />
+        <NuxtLayout>
+            <Analytics />
+            <NuxtPage />
+        </NuxtLayout>
+    </UApp>
 </template>
